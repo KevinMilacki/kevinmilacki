@@ -5,7 +5,8 @@
 }
 
 body{
-    background:linear-gradient(to left, #000, #ff0000);
+   
+    
 }
 
 .wrapper {
@@ -13,36 +14,32 @@ body{
     justify-content: center;
     align-items: center;
     height:100vh;
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .container {
     display: flex;
-    background: repeating-linear-gradient(#000000, #000000 20px, #ff0000 20px, #ff0000 25px);
-    /* position: relative; */
-    top:250px;
-    width: 90vw;
-    height: 50vh;
+    flex-direction: column;
+     width: 100vw;
+    height: 100vh;
     align-items: center;
     justify-content: center;
-    border-radius: 30% / 20%;
+   
 }
 
-.container:hover{
-    box-shadow: 0 0 50px 15px #ff0000,
-                inset 0px 0px 50px 15px #ff0000;
-}
-
-.container:hover > .words {
-    text-shadow: 0 0 10px  #fff,
-                 10px 10px 75px  #000;
-}
 
 .words {
     color: #fff;
-    text-align: center;
-    justify-content: center;
     font-family: 'Caveat', cursive;
     text-shadow: 3px 3px 5px #000;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
 
 }
 
@@ -52,23 +49,67 @@ body{
     
 }
 
-.words p {
-    
+.words li {
+    margin-left: 50px;
+    margin-top: 10px;
     font-size: 1.5rem;
+    list-style-type: none;
+    
 }
 
-@media screen and (min-width: 913px){
+
+
+.logo {
+    /* color: white; */
+    /* background-color: red; */
+   
+    width: 300px;
+    height: 100px;
+    align-items:center;
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        background-image: url("img/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
     
+    }
 
     .container{
-        width:50vw;
+        width:100vw;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
     }
+
+    .words {
+        color: #fff;
+        font-family: 'Caveat', cursive;
+        text-shadow: 3px 3px 5px #000;
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+    
+    }
+
     .words h1 {
-        font-size: 10rem;
+        font-size: 9.5rem;
+        flex-direction: row;
     }
     
-    .words p {
-        border-top: 1px solid #fff;
-        font-size: 3rem;
+    .words li {
+        margin-left: 50px;
+        margin-top: 20px;
+        font-size: 2rem;
+        list-style-type: none;
+        
+        
    }
 }
