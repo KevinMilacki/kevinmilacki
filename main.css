@@ -22,7 +22,7 @@ body{
 
 }
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
      width: 100vw;
@@ -30,7 +30,7 @@ body{
     align-items: center;
     justify-content: center;
    
-}
+} */
 
 
 .words {
@@ -39,6 +39,7 @@ body{
     text-shadow: 3px 3px 5px #000;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-left: 100px;
 
 }
@@ -46,17 +47,24 @@ body{
 .words h1 {
     font-size: 5rem;
     border-bottom: 1px solid #fff;
+    text-align: center;
     
 }
 
 .words li {
-    margin-left: 50px;
-    margin-top: 10px;
+    /* margin-left: 50px;
+    margin-top: 10px; */
+    align-items: center;
     font-size: 1.5rem;
     list-style-type: none;
+    text-align: center;
     
 }
 
+.words a {
+    text-decoration: none;
+    color: white;
+}
 
 
 .logo {
@@ -102,6 +110,7 @@ body{
     .words h1 {
         font-size: 9.5rem;
         flex-direction: row;
+        text-align: center;
     }
     
     .words li {
@@ -109,6 +118,7 @@ body{
         margin-top: 20px;
         font-size: 2rem;
         list-style-type: none;
+        text-align: center;
         
         
    }
