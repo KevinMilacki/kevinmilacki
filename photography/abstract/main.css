@@ -1,0 +1,239 @@
+body {
+   background-color: #4f4d4d;
+   margin: 0;
+}
+
+
+.head-container {
+   margin: 0 auto;
+   height: 100%;
+   padding-top:10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 0;
+   background-color: hsla(0, 2%, 10%, 0.75);
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.head-container p {
+   color: white;
+   font-size: 1.25rem;
+}
+
+.head-container ul, li{
+   font-size: 1.25rem;
+   display: flex;
+   margin-left: 20px;
+   color: white;
+   list-style:none;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: hwb(0 71% 29% / 0.787);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+    /* place-items: center; */
+    /* justify-content: center; */
+    margin-bottom: 100px;
+    justify-items: center;
+    
+}
+
+.wrapper {
+    position: absolute;
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    /* gap: 150px; */
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+
+    /* background-color: hsla(0, 4%, 76%, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 -5px 15px 3px  hwb(0 27% 73% / 0.787); */
+    margin-bottom: 25px;
+    
+    /* border: solid 1px black */
+} 
+
+
+
+.slides {
+    margin: auto;
+    padding: 4px 4px;
+    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+ 
+}
+
+.slides img {
+    margin: 5px 5px;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    /* padding: 5px; */
+    cursor: pointer;
+    transition: 500ms ease-out;
+    
+}
+
+.slides img:hover {
+   height: 50%
+   /* width: 50%; */
+    /* transform: scale(1.5); */
+} 
+
+.grayout {
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 100;
+    filter: grayscale(1);
+ }
+
+ .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: none;
+    
+ }
+
+ .modal img {
+    margin: auto;
+    /* height: 70vh; */
+    width: auto;
+    height: 70vh;
+    
+    
+ }
+
+ .showModal {
+    display: block;
+ }
+
+ #leftButton{
+    position: absolute;
+    z-index: 300;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-100%);
+    left: 0;
+    border: none;
+    border-radius: 25% 0 0 25%;
+    font-size: 2rem;
+    color: white;
+    background-color: hsla(240, 7%, 46%, 0.50);
+    cursor: pointer;
+ }
+
+ #rightButton{
+    position: absolute;
+    z-index: 300;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(100%);
+    right: 0;
+    border: none;
+    border-radius: 0 25% 25% 0; 
+    font-size: 2rem;
+    color: white;
+    background-color: hsla(240, 7%, 46%, 0.50);
+    cursor: pointer;
+ }
+
+ #exitButton{
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    border: solid white 1px;
+    border-radius: 100%;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: hsla(0, 88%, 35%, 0.427);
+    cursor: pointer;
+ }
+
+ #exitButton:hover {
+    background-color: hsla(0, 88%, 35%, 0.857);
+
+ }
+
+ #leftButton:hover, #rightButton:hover {
+    background-color: hsla(0, 0%, 79%, 0.809);
+    color: black;
+ }
+
+
+
+
+
+
+ @media screen and (max-width: 768px) {
+   
+   h1 {
+      font-size: 2rem;
+   }
+
+   .head-container ul, li{
+      font-size: .75rem;
+   }
+   .slides {
+      justify-content: center;
+}
+
+   .slides img {
+      width: 50vw;
+      height: auto;
+   }
+   
+   #leftButton, #rightButton, #exitButton {
+      font-size: .75rem;
+   }
+
+   .modal img {
+      width: 60vw;
+      height: auto;
+   } 
+
+  }
+ @media screen and (max-width: 1230px)   {
+    
+   .slides {
+      justify-content: space-around;
+   }
+   #leftButton, #rightButton, #exitButton {
+      font-size: 1.5rem;
+   }
+   
+   .modal img {
+      width: 80vw;
+      height: auto;
+   }
+}
