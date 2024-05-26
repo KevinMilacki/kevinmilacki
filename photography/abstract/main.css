@@ -3,7 +3,10 @@ body {
    margin: 0;
 }
 
-
+a {
+   text-decoration: none;
+   color:white;
+}
 .head-container {
    margin: 0 auto;
    height: 100%;
@@ -76,27 +79,31 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
+   
 
  
 }
 
 .slides img {
-    margin: 5px 5px;
+    margin: 10px 10px;
     align-items: center;
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
+    height: 250px;
+    width: 250px;
+
+    object-fit:cover;
     /* padding: 5px; */
     cursor: pointer;
-    transition: 500ms ease-out;
+    /* transition: 500ms ease-out; */
     
 }
 
 .slides img:hover {
-   height: 50%
+   /* height: 50% */
    /* width: 50%; */
-    /* transform: scale(1.5); */
+   border:5px solid white;
+   /* border-radius: 15px; */
+   margin:5px 5px;
+   /* transform: scale(1.5); */
 } 
 
 .grayout {
@@ -171,9 +178,9 @@ h1 {
     transform: translateY(-100%);
     border: solid white 1px;
     border-radius: 100%;
-    padding: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 1rem;
     color: white;
     background-color: hsla(0, 88%, 35%, 0.427);
