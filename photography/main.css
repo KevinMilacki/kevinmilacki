@@ -54,9 +54,10 @@ h1 {
    aspect-ratio: 1 / 0.4;
    background-size: cover;
    background-position: center;
-   margin-left: 5rem;
+   /* margin-left: 5rem;
    margin-right: 5rem;
-   margin-top: 3rem;
+   margin-top: 3rem; */
+   margin: 5rem 3rem;
 
 
 }
@@ -83,7 +84,9 @@ h1 {
    background-image: url("norecess/img/Norecess-8.jpg");
 }
 
-
+.mystical {
+   background-image: url("mystical/img/Mystical-7.jpg")
+}
 
 
  @media screen and (max-width: 768px) {

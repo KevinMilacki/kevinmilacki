@@ -69,8 +69,8 @@ function exitSlide() {
 
 function makeModal(slideImg) {
   modalSlider.innerHTML = `<img id="modalImg" src="${slideImg}"   >
-                             <button type="button" class="button" id="leftButton"  onClick="prevSlide()" >&#8678;</button>
-                             <button type="button" class="button" id="rightButton" onClick="nextSlide()" >&#8680;</button>
+                             <button type="button" class="button" id="leftButton"  onClick="prevSlide()" > < </button>
+                             <button type="button" class="button" id="rightButton" onClick="nextSlide()" > > </button>
                              <buttin type="button" class="button" id="exitButton" onClick="exitSlide()" > &#10006; </button>`;
 
   const modalImg = document.getElementById("modalImg");

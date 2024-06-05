@@ -24,7 +24,6 @@ li::after {
    justify-content: space-between;
    align-items: end;
    font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .head-container p {
@@ -50,12 +49,8 @@ h1 {
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    
-    /* place-items: center; */
-    /* justify-content: center; */
     margin-bottom: 100px;
     justify-items: center;
-    
 }
 
 .wrapper {
@@ -63,21 +58,11 @@ h1 {
     width: 90vw;
     margin: 0 auto;
     display: grid;
-    /* gap: 150px; */
-    /* grid-template-rows: repeat(5, minmax(300px, 1fr)); */
-
-    /* background-color: hsla(0, 4%, 76%, 0.75);
-    border-radius: 10px;
-    box-shadow: 0 -5px 15px 3px  hwb(0 27% 73% / 0.787); */
     margin-bottom: 25px;
-    
-    /* border: solid 1px black */
+    margin-top:30px;
 } 
 
-
-
 .slides {
-    /* margin: auto; */
     padding: 4px 4px;
     display: block;
     align-items: center;
@@ -85,36 +70,21 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   
-
- 
 }
 
 .slides img:hover {
-   /* height: 50% */
-   /* width: 50%; */
    outline:5px solid white;
    outline-offset: -5px;
-   
-   /* border-radius: 15px; */
-   /* margin:5px 5px; */
-   /* transform: scale(1.5); */
  }  
 
 .slides img {
-    /* margin: 10px 10px; */
     Margin: 10px;
     align-items: center;
     height: 250px;
     width: 250px;
-      
     object-fit:cover;
-    /* padding: 5px; */
     cursor: pointer;
-    /* transition: 500ms ease-out; */
-    
 }
-
 
 .grayout {
     left: 0px;
@@ -139,13 +109,9 @@ h1 {
 
  .modal img {
     margin: auto;
-    /* height: 70vh; */
     width: auto;
     height: 70vh;
-    /* border: black solid 30px; */
     border-radius: 10px;
-    
-    
  }
 
  .showModal {
@@ -160,7 +126,7 @@ h1 {
     transform: translateX(10%);
     left: 0;
     border:none;
-    opacity: .3;
+    opacity: .7;
     border-radius: 100%;
     padding: 5px 15px;
     font-size: 2rem;
@@ -179,7 +145,7 @@ h1 {
     border: none;
     border-radius: 100%; 
     padding: 5px 15px;
-    opacity: .3;
+    opacity: .7;
     font-size: 2rem;
     color: white;
     background-color: hsla(240, 7%, 46%, 0.50);
@@ -193,7 +159,6 @@ h1 {
     right: 0;
     transform: translateY(10%);
     transform: translateX(-10%);
-    /* border: solid white 1px; */
     border-radius: 100%;
     padding: 2px;
     padding-left: 5px;
@@ -201,14 +166,11 @@ h1 {
     font-size: 1.5rem;
     color: white;
     opacity:0.3;
-    /* background-color: hsla(0, 88%, 35%, 0.427); */
     cursor: pointer;
  }
 
  #exitButton:hover {
-    /* background-color: hsla(0, 88%, 35%, 0.857); */
     transform:scale(150%) translateX(-20%);
-   
     opacity: 1;  
  }
 
@@ -217,10 +179,6 @@ h1 {
     color: black;
     opacity: 1;
  }
-
-
-
-
 
 
  @media screen and (max-width: 768px) {
