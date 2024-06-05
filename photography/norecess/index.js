@@ -59,7 +59,11 @@ function exitSlide() {
   photoGrid.classList.remove("grayout");
   photoGrid.style.position = "";
   modalSlider.classList.remove("showModal");
-  modalImg.parentNode.removeChild(modalImg);
+  // Instead of removing the modal image element, hide it
+  const modalImg = document.getElementById("modalImg");
+  if (modalImg) {
+    modalImg.style.display = "none";
+  }
   wrapper.style.display = "";
 }
 
